@@ -1,0 +1,61 @@
+import java.awt.datatransfer.DataFlavor;
+import java.awt.dnd.DropTarget;
+import java.awt.*;
+import java.io.File;
+
+import javax.swing.JFileChooser;
+import javax.swing.JTextArea;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.*;
+
+public class fileChooser {
+	
+	static String selectedFileName = null;
+	static String selectedFilePath = null;
+
+	public static File ChooseFile()
+{
+		
+		
+	JFileChooser fileChooser = new JFileChooser();
+	fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
+	fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+	fileChooser.setDragEnabled(true);
+	fileChooser.updateUI();
+	FileNameExtensionFilter filter = new FileNameExtensionFilter(
+	        "Excel files", "xls", "xlsx");
+	    fileChooser.setFileFilter(filter);
+	
+	int result = fileChooser.showOpenDialog(null);
+	
+	if (result == JFileChooser.APPROVE_OPTION) {	
+	    File selectedFile = fileChooser.getSelectedFile();
+	    selectedFileName=fileChooser.getSelectedFile().getName();
+	    
+	    selectedFilePath = selectedFile.getParent();
+	    
+	 //System.out.println("Selected file: " + selectedFile.getParent());
+	    return selectedFile;
+	}
+	else
+		return null;
+}
+	
+//	JTextArea myPanel = new JTextArea();
+//	myPanel.setDropTarget(new DropTarget() {
+//	    public synchronized File drop(DropTargetDropEvent evt) {
+//	        try {
+//	            evt.acceptDrop(DnDConstants.ACTION_COPY);
+//	            List<File> droppedFiles = (List<File>)
+//	                evt.getTransferable().getTransferData(DataFlavor.javaFileListFlavor);
+//	            for (File file : droppedFiles) {
+//	                return file;
+//	            }
+//	        } catch (Exception ex) {
+//	            ex.printStackTrace();
+//	        }
+//	    }
+//	});
+//}
+}
+

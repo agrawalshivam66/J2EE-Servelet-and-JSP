@@ -1,0 +1,82 @@
+import java.util.Map;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.CellValue;
+import org.apache.poi.ss.usermodel.FormulaEvaluator;
+
+public class formula implements FormulaEvaluator {
+
+	@Override
+	public void clearAllCachedResultValues() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public CellValue evaluate(Cell arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void evaluateAll() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int evaluateFormulaCell(Cell arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public CellType evaluateFormulaCellEnum(Cell arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Cell evaluateInCell(Cell arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void notifyDeleteCell(Cell arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void notifySetFormula(Cell arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void notifyUpdateCell(Cell arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setDebugEvaluationOutputForNextEval(boolean arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setIgnoreMissingWorkbooks(boolean arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setupReferencedWorkbooks(Map<String, FormulaEvaluator> arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

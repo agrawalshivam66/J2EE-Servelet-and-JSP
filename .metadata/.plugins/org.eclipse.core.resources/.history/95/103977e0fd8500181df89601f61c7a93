@@ -1,0 +1,26 @@
+import java.io.File;
+
+import javax.swing.JFileChooser;
+import javax.swing.filechooser.FileNameExtensionFilter;
+
+public class fileChooser {
+public static File ChooseFile()
+{
+	JFileChooser fileChooser = new JFileChooser();
+	fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
+	fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+	FileNameExtensionFilter filter = new FileNameExtensionFilter(
+	        "Excel files", "xls", "xlsx");
+	    fileChooser.setFileFilter(filter);
+	
+	int result = fileChooser.showOpenDialog(null);
+	
+	if (result == JFileChooser.APPROVE_OPTION) {	
+	    File selectedFile = fileChooser.getSelectedFile();
+	   // System.out.println("Selected file: " + selectedFile.getAbsolutePath());
+	    return selectedFile;
+	}
+	else return null;
+}
+}
+

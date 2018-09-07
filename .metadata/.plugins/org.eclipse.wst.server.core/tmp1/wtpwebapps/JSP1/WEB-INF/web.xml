@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>lit</servlet-name>
+		<jsp-file>/s4.jsp</jsp-file>
+
+	<init-param>
+	<param-name>city</param-name>
+	<param-value>BBSR</param-value>
+	</init-param>
+		</servlet>
+	<servlet-mapping>
+		<servlet-name>lit</servlet-name>
+		<url-pattern>/s4.jsp</url-pattern>
+	</servlet-mapping>
+	
+	<context-param>
+	<param-name>state</param-name>
+	<param-value>Odisha</param-value>
+	</context-param>
+
+</web-app>

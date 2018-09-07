@@ -1,0 +1,14 @@
+127.0.0.1 - - [07/Jul/2018:15:31:02 +0530] "GET / HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [07/Jul/2018:15:31:03 +0530] "GET /JSP1/s19.jsp HTTP/1.1" 200 376
+0:0:0:0:0:0:0:1 - - [07/Jul/2018:15:31:03 +0530] "GET /favicon.ico HTTP/1.1" 404 1014
+0:0:0:0:0:0:0:1 - - [07/Jul/2018:15:31:27 +0530] "GET /JSP1/addUserForm.jsp HTTP/1.1" 404 1032
+0:0:0:0:0:0:0:1 - - [07/Jul/2018:15:32:05 +0530] "GET /JSP1/s19.jsp HTTP/1.1" 200 376
+0:0:0:0:0:0:0:1 - - [07/Jul/2018:15:32:08 +0530] "GET /JSP1/addUserForm.jsp HTTP/1.1" 404 1032
+127.0.0.1 - - [07/Jul/2018:15:33:03 +0530] "GET / HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [07/Jul/2018:15:33:04 +0530] "GET /JSP1/s19.jsp HTTP/1.1" 200 376
+0:0:0:0:0:0:0:1 - - [07/Jul/2018:15:33:07 +0530] "GET /JSP1/addUserForm.jsp HTTP/1.1" 200 780
+0:0:0:0:0:0:0:1 - - [07/Jul/2018:15:34:05 +0530] "GET /JSP1/viewUsers.jsp HTTP/1.1" 404 1028
+127.0.0.1 - - [07/Jul/2018:15:43:40 +0530] "GET / HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [07/Jul/2018:15:43:40 +0530] "GET /JSP1/addUserForm.html HTTP/1.1" 200 431
+0:0:0:0:0:0:0:1 - - [07/Jul/2018:15:44:52 +0530] "GET /JSP1/addUser.jsp?userid=shivam&password=shivam&department=cse&location=BMU HTTP/1.1" 200 287
+0:0:0:0:0:0:0:1 - - [07/Jul/2018:15:53:28 +0530] "GET /JSP1/addUser.jsp?userid=shivam&password=shivam&department=cse&location=BMU HTTP/1.1" 200 287
